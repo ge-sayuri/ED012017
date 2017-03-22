@@ -1,0 +1,28 @@
+Entrada: A,n,a //A é um vetor com n elementos e a é o elemento a ser buscado dentro do vetor
+
+Entrada: indice_correto //indice_correto é a variável que vai registrar onde está o elemento buscado
+
+procedure Busca(n,a) {
+
+    indice_correto = n //define o índice com um valor diferente dos índices possíveis
+
+    para i de 0 até n-1 {
+    
+        se (A[i] == a) { //varre todos os elementos do vetor comparando com o elemento buscado
+       
+            indice_correto = i //quando localiza o elemento buscado, guarda o índice dentro do vetor
+
+            }
+        } 
+
+    se (indice_correto < n) {
+  
+        mostra ("O índice correto é: %d", indice_correto)
+    
+    senão
+    
+        mostra ("O elemento nao foi localizado") 
+
+    }
+ 
+    }
