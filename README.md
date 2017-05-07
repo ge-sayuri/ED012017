@@ -1,3 +1,1 @@
-Disciplina: Estrutura de Dados
-1º Semestre de 2017
-Universidade de Brasília
+Atividades desenvolvidas em aula - Estrutura de Dados - Turma B 2017-1
