@@ -5,27 +5,22 @@
 // A populacao tera 10 elementos
 
 float desviopadrao(float *p, int tamanho){
-
     float media=0, resultado=0;
-    int j=0, var=0, x, y;
+    int j=0, x;
 
     //Calcular a media dos valores fornecidos, dividindo a soma pelo total de elementos
-    var = sizeof(float);
-    x=0; //Esta variavel vai nos auxiliar na movimentação pela memoria de float em float
     for (j=0;j<tamanho;j++){
-            y = (int)*(p+x);
-            media = media + (float)y;
-            x = x + var;
+            x = (int)*(p+j);
+            media = media + (float)x;
     }
     printf("\n");
     media = media/tamanho;
 
     //Somatorio de (xi-media)^2
-    x=0;
+
     for(j=0;j<tamanho;j++){
-        y = (int)*(p+x);
-        resultado = resultado + pow((((float)y)-media),2);
-        x=x+var;
+        x = (int)*(p+j);
+        resultado = resultado + pow((((float)x)-media),2);
     }
 
     //Raiz da soma dividida pela quantidade de elementos
